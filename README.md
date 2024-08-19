@@ -6,7 +6,7 @@ This is a simple Node.js and Express API for handling account transfers between 
 ## Features
 
 - **Transfer Funds:** Transfer money between accounts with appropriate error handling.
-- **Error Handling:** Detailed error messages for situations like non-existent accounts and insufficient funds 
+- **Error Handling:** Detailed error messages for situations like non-existent accounts, insufficient funds and invalid amounts
 - **Transaction Logging:** Logs each transfer with a timestamp.
 
 ## Getting Started
@@ -83,6 +83,7 @@ By default, the server will run on http://localhost:3000.
 
 - **Non-existent Accounts:** Returns an error if the source or destination account does not exist.
 - **Insufficient Funds:** Returns an error if the source account has insufficient funds.
+- **Invalid Amount:** Returns an error if the transfer amount is invalid (e.g., negative or non-numeric).
 
 ## Testing
 
