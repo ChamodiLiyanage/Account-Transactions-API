@@ -23,6 +23,14 @@ describe("TransferService", () => {
     });
   });
 
+  test("should throw error if Invalid transfer amount", () => {
+    expect(() => {
+      transferFunds("12345", "67890", -1000);
+    }).toThrow(
+      "Invalid transfer amount. The amount must be a positive number."
+    );
+  });
+
   test("should throw error if both source and destination accounts do not exist", () => {
     expect(() => {
       transferFunds("11100", "66655", 1000);

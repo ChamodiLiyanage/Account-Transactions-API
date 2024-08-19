@@ -7,6 +7,11 @@ const transferFunds = (
   destinationAccountNumber,
   amount
 ) => {
+  if (typeof amount !== "number" || amount <= 0) {
+    throw new Error(
+      "Invalid transfer amount. The amount must be a positive number."
+    );
+  }
   if (!accounts[sourceAccountNumber] && !accounts[destinationAccountNumber]) {
     throw new Error("Both source and destination accounts do not exist");
   }
