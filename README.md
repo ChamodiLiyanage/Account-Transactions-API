@@ -60,21 +60,21 @@ By default, the server will run on http://localhost:3000.
 - **Response:**
      ```bash
    {
-    "message": "Transfer successful",
-    "sourceAccount": {
+        "message": "Transfer successful",
+        "sourceAccount": {
         "accountNumber": "12345",
         "balance": 99000
     },
-    "destinationAccount": {
-        "accountNumber": "67890",
-        "balance": 201000
-    },
-    "transaction": {
-        "sourceAccountNumber": "12345",
-        "destinationAccountNumber": "67890",
-        "amount": 1000,
-        "timestamp": "2024-08-19T12:34:56.789Z"
-    }
+        "destinationAccount": {
+            "accountNumber": "67890",
+            "balance": 201000
+        },
+        "transaction": {
+            "sourceAccountNumber": "12345",
+            "destinationAccountNumber": "67890",
+            "amount": 1000,
+            "timestamp": "2024-08-19T12:34:56.789Z"
+        }
   }
 
    ```
